@@ -1,0 +1,39 @@
+HOME            = .
+RANDFILE        = $ENV::HOME/.rnd
+
+####################################################################
+[ req ]
+default_bits       = 2048
+default_keyfile    = client-key.pem
+distinguished_name = server_distinguished_name
+req_extensions     = server_req_extensions
+string_mask        = utf8only
+
+####################################################################
+[ server_distinguished_name ]
+countryName         = Country Name (2 letter code)
+countryName_default = CA
+
+stateOrProvinceName         = State or Province Name (full name)
+stateOrProvinceName_default = ON
+
+localityName         = Locality Name (eg, city)
+localityName_default = TO
+
+organizationName            = Organization Name (eg, company)
+organizationName_default    = PIV Org
+
+commonName           = Common Name (e.g. server FQDN or YOUR name)
+commonName_default   = PIV Org
+
+emailAddress         = Email Address
+emailAddress_default = piv-user-1@piv.org
+
+####################################################################
+[ server_req_extensions ]
+
+subjectKeyIdentifier = hash
+basicConstraints     = CA:FALSE
+keyUsage             = digitalSignature, keyEncipherment
+subjectAltName       = otherName:msUPN;UTF8:piv-user-1@piv.org, email:piv-user-1@piv.org
+nsComment            = "OpenSSL Generated Certificate"
