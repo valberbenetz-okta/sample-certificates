@@ -53,7 +53,7 @@ organizationalUnitName         = Organizational Unit (eg, division)
 organizationalUnitName_default = PIV Org
 
 commonName         = Common Name (e.g. server FQDN or YOUR name)
-commonName_default = piv.org
+commonName_default = ca.piv.org
 
 emailAddress         = Email Address
 emailAddress_default = ca@piv.org
@@ -65,7 +65,7 @@ subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid:always, issuer
 basicConstraints       = critical, CA:true
 keyUsage               = keyCertSign, cRLSign
-crlDistributionPoints  = URI:https://github.com/rabisankarsahu-okta/crl/raw/master/test-x509-auth-idp-two-level-intermediate-ca2.crl
+crlDistributionPoints  = URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca/ca.crl
 
 ####################################################################
 [ signing_policy ]
@@ -83,4 +83,4 @@ subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid,issuer
 basicConstraints       = CA:FALSE
 keyUsage               = digitalSignature, keyEncipherment
-crlDistributionPoints  = URI:https://github.com/rabisankarsahu-okta/crl/raw/master/test-x509-auth-idp-two-level-intermediate-ca2.crl
+crlDistributionPoints  = URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca/ca.crl
