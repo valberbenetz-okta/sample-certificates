@@ -35,5 +35,5 @@ emailAddress_default = piv-user-1@piv.org
 subjectKeyIdentifier = hash
 basicConstraints     = CA:FALSE
 keyUsage             = digitalSignature, keyEncipherment
-subjectAltName       = otherName:msUPN;UTF8:piv-user-1@piv.org, email:piv-user-1@piv.org
+subjectAltName       = otherName:msUPN;UTF8:piv-user-1@piv.org, email:piv-user-1@piv.org, URI:urn:uuid:029fbb34-e17d-11ea-87d0-0242ac130003
 nsComment            = "OpenSSL Generated Certificate"

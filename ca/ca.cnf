@@ -65,6 +65,7 @@ subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid:always, issuer
 basicConstraints       = critical, CA:true
 keyUsage               = keyCertSign, cRLSign
+crlDistributionPoints  = URI:https://github.com/rabisankarsahu-okta/crl/raw/master/test-x509-auth-idp-two-level-intermediate-ca2.crl
 
 ####################################################################
 [ signing_policy ]
@@ -82,3 +83,4 @@ subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid,issuer
 basicConstraints       = CA:FALSE
 keyUsage               = digitalSignature, keyEncipherment
+crlDistributionPoints  = URI:https://github.com/rabisankarsahu-okta/crl/raw/master/test-x509-auth-idp-two-level-intermediate-ca2.crl
