@@ -24,7 +24,7 @@ organizationName            = Organization Name (eg, company)
 organizationName_default    = PIV Org
 
 commonName           = Common Name (e.g. server FQDN or YOUR name)
-commonName_default   = Client PIV Org
+commonName_default   = piv.org
 
 emailAddress         = Email Address
 emailAddress_default = piv-user-1@piv.org
