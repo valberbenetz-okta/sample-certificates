@@ -65,7 +65,7 @@ subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid:always, issuer
 basicConstraints       = critical, CA:true
 keyUsage               = critical, digitalSignature, cRLSign, keyCertSign
-crlDistributionPoints  = URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca/ca.crl
+crlDistributionPoints  = URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca/ca.crl,URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca-int/ca-int.crl
 
 ####################################################################
 [ signing_policy ]
@@ -83,4 +83,4 @@ subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid,issuer
 basicConstraints       = CA:FALSE
 keyUsage               = critical, nonRepudiation, digitalSignature, keyEncipherment
-crlDistributionPoints  = URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca/ca.crl
+crlDistributionPoints  = URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca/ca.crl,URI:https://github.com/valberbenetz-okta/sample-certificates/raw/master/ca-int/ca-int.crl

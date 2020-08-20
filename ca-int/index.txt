@@ -14,3 +14,4 @@ V	230516224236Z		6D	unknown	/C=CA/ST=ON/L=TO/O=PIV Org/CN=piv.org
 V	230517153950Z		6E	unknown	/C=CA/ST=ON/L=TO/O=PIV Org/CN=piv.org
 V	230517160601Z		6F	unknown	/C=CA/ST=ON/L=TO/O=PIV Org/CN=piv.org
 V	230517163305Z		70	unknown	/C=CA/ST=ON/L=TO/O=PIV Org/CN=piv.org
+V	230517215800Z		71	unknown	/C=CA/ST=ON/L=TO/O=PIV Org/CN=piv.org
